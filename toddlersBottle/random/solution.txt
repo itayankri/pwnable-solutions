@@ -1,0 +1,1 @@
+The "random" number is always 0x6b8b4567 so i xored it with 0xdeafbeef and the decimal outcome is 3039230856.

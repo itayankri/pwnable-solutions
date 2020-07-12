@@ -1,0 +1,2 @@
+The password is: "cat: password: Permission denied", so the following command will work just fine:
+	cat password | ./blukat

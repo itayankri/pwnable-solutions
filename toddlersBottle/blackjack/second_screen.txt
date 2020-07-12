@@ -1,0 +1,4 @@
+Enter 1 to Begin the Greatest Game Ever Played.
+Enter 2 to See a Complete Listing of Rules.
+Enter 3 to Exit Game. (Not Recommended)
+Choice: 

@@ -1,0 +1,27 @@
+[sizes sequence] ==> $edx on segmentation fault
+
+<Minimal values> 
+8 16 32 64 128 256 512 1024 2048 4096 ==> 0x804c4a8
+<Experiment stopped on fast_memcpy level 5>
+
+<Maximal values>
+16 32 64 128 256 512 1024 2048 4096 8192 ==> 0x804c498
+<Experiment stopped on fast_memcpy level 5>
+
+<Minimal values, but 71 (64+7) instead of 64>
+8 16 32 71 128 256 512 1024 2048 4096 ==> 0x804c538
+<Experiment stopped on fast_memcpy level 6>
+
+<Same as last try, but 135 (128+7) instead of 128>
+8 16 32 71 135 256 512 1024 2048 4096 ==> 0x804c648
+<Experiment stopped on fast_memcpy level 6>
+
+<Plus 7 to all number from 64>
+8 16 32 71 135 263 519 1031 2055 4103 ==> No segmentation fualt!
+
+The problems was the memory address alignment.
+When using SSE registers, you can store data only on mmory addresses that are
+evenly divisible by 16 bytes (basically, the least significant digit og the 
+address must be 0).
+
+flag : 1_w4nn4_br34K_th3_m3m0ry_4lignm3nt

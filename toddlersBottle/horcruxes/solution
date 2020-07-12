@@ -1,0 +1,11 @@
+Create the exploit by redirecting exploit.py to a file (exp),
+and then run the following command on pwnable.kr server:
+	(cat exp; cat) | nc 0 9032)
+
+After you get all the horcruxes with the EXP numbers, user ./calc_exp
+to calculate the total EXP.
+
+Feed it to the program and you will get the flag.
+
+And the flag is:
+	Magic_spell_1s_4vad4_K3daVr4!

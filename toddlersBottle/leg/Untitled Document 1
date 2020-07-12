@@ -1,0 +1,7 @@
+key1() --> 0x8ce4
+
+key2() --> 0x8d0c
+
+key3() --> 0x8d80
+
+0x8ce4 + 0x8d0c + 0x8d80 = 0x1a770 (decimal 108400, which is the corrent input)
